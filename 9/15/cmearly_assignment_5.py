@@ -14,6 +14,7 @@ while current_number != 1:
 print()
 print("Steps:", step_count)
 print()
+
 #Git Commit 2
 print("=== Challenge 2: Prime Number Checker ===")
 integer = int(input())
@@ -29,4 +30,18 @@ else:
     print(f"{integer} is not prime (divisible by 3)")
 print()
 
+#Git Commit 3
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+print("    ", end="")
+#AI used to find out how to use "col" and "row" to print the table properly.
+for col in range(1, 11):
+    print(f"{col:4}", end="")
+print()
+for row in range(1, 11):
+    print(f"{row:2} ", end="")
+    for col in range(1, 11):
+        product = row * col
+        print(f"{product:4}", end="")
+    print()
 
