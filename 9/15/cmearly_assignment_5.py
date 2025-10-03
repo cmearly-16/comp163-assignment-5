@@ -1,4 +1,3 @@
-
 #Git Commit 1
 print("=== Challenge 1: Collatz Conjecture ===")
 current_number = int(input("Enter starting number: "))
@@ -14,6 +13,20 @@ while current_number != 1:
     step_count += 1
 print()
 print("Steps:", step_count)
+print()
+#Git Commit 2
+print("=== Challenge 2: Prime Number Checker ===")
+integer = int(input())
+print(f"Enter a number: Testing divisors from 2 to {integer - 1}...")
+prime = True
+for i in range(2, integer):
+    if integer % i == 0:
+        prime = False
+        break
+if prime:
+    print(f"{integer} is prime!")
+else:
+    print(f"{integer} is not prime (divisible by 3)")
 print()
 
 
